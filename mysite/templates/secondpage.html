@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: silver">
+ <h1>Product List</h1><br>
+{% for i in product %}
+ {{i.name}}<br>
+ {{i.price}}<br>
+ {{i.description}}<br>
+ <br>
+{% endfor %}
+ <h1>Post</h1>
+ {% for i in post %}
+ {{i.text}}<br>
+ {{i.title}}<br>
+ {{i.category}}<br>
+{% endfor %}
+ <h1><a href="{% url 'home' %}">Previous</a></h1>
+</body>
+</html>
